@@ -238,11 +238,12 @@ body {
 }
 
 .primary:hover {
-  background: #00c6ff;
+  background: whitesmoke;
+  color: black;
 }
 
 .secondary:hover {
-  background: #fff;
+  background: whitesmoke;
   color: #000;
 }
 
@@ -313,5 +314,6 @@ body {
     font-size: 0.8rem;
   }
 }
+
 
 
