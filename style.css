@@ -355,7 +355,7 @@ color: skyblue;
    }
   .home-content h1{  
     font-size: 1.2rem;
-     margin-top: -50px;
+     margin-top: -90px;
   }
   .btn{
     width: 40%;
@@ -368,5 +368,6 @@ color: skyblue;
     width: 100%;
   }
 }
+
 
 
