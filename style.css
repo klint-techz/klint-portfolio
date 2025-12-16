@@ -90,7 +90,7 @@ body {
     position: relative;
     min-height: 95vh;
 
-    background-image: url("img/workspace.jpg");
+    background-image: url("workspace.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -164,3 +164,4 @@ body {
     height: 410px;
     width: 100%;
 }
+
