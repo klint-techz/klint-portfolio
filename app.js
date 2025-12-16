@@ -100,13 +100,13 @@ window.addEventListener("load", () => {
       },
       color: { value: "#3498db" },
       shape: { type: "circle" },
-      opacity: { value: 0.2 },
+      opacity: { value: 0.3 },
       size: { value: 1.9 },
       line_linked: {
         enable: true,
         distance: 150,
         color: "#e10600",
-        opacity: 0.1,
+        opacity: 0.3,
         width: 1
       },
       move: { enable: true, speed: 2, random: true, }
@@ -119,5 +119,6 @@ window.addEventListener("load", () => {
     retina_detect: true
   });
 });
+
 
 
