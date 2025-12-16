@@ -1,65 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Klint-techz | Portfolio</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<!-- PRELOADER -->
+<div id="preloader">
+  <h1 class="preloader-text"></h1>
+</div>
 
-<nav class="navbar">
-     <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+
+<!-- NAVBAR -->
+<header class="header">
+  <nav class="navbar">
+    
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+
+      <div class="social">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
     </div>
-    <div class="logo">Klint-techz</div>
-    
-
-    <ul class="nav-links" id="navLinks">
-    
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">project</a></li>
     </ul>
-</nav>
-<section class="hero">
-    <div class="content">
-        <p class="clinton">Clinton</h1>
-        <h1>Chukwukere</p>
-            <p class="dev">WEB DEVELOPER</p>
-            <div>
-                <button class="proBtn">Projects</button>
-                <button class="proBtn">Get in touch</button>
-        </div>
-            
-    </div>
-</section>
-
-<section class ="about">
-    <h1 class="aboutHead">ABOUT</h1>
-    <p class="underAbout">Klint-techz.com</p>
-    <div>
-        <img class="aboutImg" src="img/aboutImg.jpg" alt="">
-        <div class="circle"></div>
     
+
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <div class="welcome">
+    <div class="star">&#9733;</div>
+    <p>welcome to my digital universe</p>
+    
+</div>
+  
+</header>
+
+<!-- HOME SECTION -->
+<section class="home" id="home">
+  <div id="particles-js"></div>
+  <div class="overlay"></div>
+
+  <div class="home-content">
+    <h1>Hello, I’m <br> <span>Klint-techz</span></h1>
+    <h3> <span class="typing"></span></h3>
+
+    <p>
+      I build modern, responsive digital experiences that help brands shine. Skilled in web development, design, marketing,
+       and content creation, I turn ideas into results
+    </p>
+
+    <div class="home-buttons">
+      <a href="#projects" class="btn primary">Projects</a>
+      <a href="#contact" class="btn secondary">Hire Me</a>
     </div>
 
-    <div class="aboutContent">
-        <p class="aboutp">
-            I am a digital professional with 3 years of experience specializing in graphic design,
-             content creation, digital marketing, and web development. I create visually compelling designs,
-              engaging content, and effective digital solutions that help brands and individuals grow. Combining 
-              creativity with technology, I focus on delivering work that is both functional and aesthetically pleasing. 
-              Every project I handle is approached with attention to detail, innovation, and a commitment to excellence.
-               I thrive on solving real-world problems through smart, strategic solutions, and I continuously
-             adapt to new trends in the digital space. My goal is to empower clients, enhance user experiences,
-              and deliver results that leave a lasting impact.
-        </p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
     </div>
+  </div>
 </section>
+
+<!-- PARTICLES -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
 <script src="app.js"></script>
 </body>
