@@ -96,7 +96,7 @@ window.addEventListener("load", () => {
     particles: {
       number: {
         value: 100,
-        density: { enable: true, value_area: 500 }
+        density: { enable: true, value_area: 430 }
       },
       color: { value: "#3498db" },
       shape: { type: "circle" },
@@ -105,8 +105,8 @@ window.addEventListener("load", () => {
       line_linked: {
         enable: true,
         distance: 80,
-        color: "#3498db",
-        opacity: 0.3,
+        color: "#e10600",
+        opacity: 0.2,
         width: 1
       },
       move: { enable: true, speed: 2, random: true, straight: false }
