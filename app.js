@@ -96,7 +96,7 @@ window.addEventListener("load", () => {
     particles: {
       number: {
         value: 100,
-        density: { enable: true, value_area: 900 }
+        density: { enable: true, value_area: 500 }
       },
       color: { value: "#3498db" },
       shape: { type: "circle" },
@@ -104,12 +104,12 @@ window.addEventListener("load", () => {
       size: { value: 1.9 },
       line_linked: {
         enable: true,
-        distance: 150,
+        distance: 80,
         color: "#e10600",
         opacity: 0.3,
         width: 1
       },
-      move: { enable: true, speed: 2, random: true, }
+      move: { enable: true, speed: 2, random: true, straight: false }
     },
     interactivity: {
       events: {
@@ -119,6 +119,7 @@ window.addEventListener("load", () => {
     retina_detect: true
   });
 });
+
 
 
 
