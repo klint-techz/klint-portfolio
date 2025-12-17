@@ -20,8 +20,9 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  color: transparent;
-  -webkit-text-stroke: 1px #3498db;
+  color: #00c6ff;
+ 
+
   letter-spacing: 2px;
   white-space: nowrap;
   font-size: 2rem;
@@ -39,8 +40,8 @@ body {
 }
 
 /* ================= HEADER ================= */
-.header {
-  position: fixed;
+.nav {
+  position: sticky;
   width: 100%;
   top: 0;
   z-index: 1000;
@@ -155,7 +156,7 @@ body {
 /* ================= HOME ================= */
 .home {
   height: 95vh;
-  background: url("workspace.jpg") center/cover no-repeat;
+  background: url("img/workspace.jpg") center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -251,7 +252,7 @@ body {
 .socials {
   margin-top: 50px;
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 .social {
   margin-top: 50px;
@@ -315,5 +316,163 @@ body {
   }
 }
 
+/* ===========================
+   ABOUT SECTION – GLASSMORPHISM
+   =========================== */
+
+.about {
+  min-height: 100vh;
+  padding: 120px 20px;
+  position: relative;
+  background:
+  radial-gradient(circle at top left, rgba(0,2,5,0.8), transparent 45%),
+    radial-gradient(circle at bottom right, rgba(122,92,255,0.18), transparent 65%),
+    #000;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Heavy glass overlay */
+.about::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(18px);
+  z-index: 0;
+}
+
+.about-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: auto;
+}
+strong{
+  color: #00c6ff;
+}
+
+/* Section title */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section-title span {
+  color: transparent;
+  -webkit-text-stroke: 1.2px #00c6ff;
+}
+
+/* Intro text */
+.about-intro {
+  max-width: 750px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #cfcfcf;
+  margin-bottom: 60px;
+}
+
+/* Content layout */
+.about-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+}
+
+/* Text */
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+/* Stats container */
+.about-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Stat card */
+.stat {
+  position: relative;
+  padding: 28px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.07);
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+}
+
+/* Gradient glass border */
+.stat::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1.5px;
+  border-radius: 18px;
+  background: linear-gradient(90deg, #00c6ff, #7a5cff);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+
+/* Stat number */
+.stat h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00c6ff, #7a5cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Stat label */
+.stat span {
+  font-size: 0.9rem;
+  color: #bdbdbd;
+}
+
+/* ===========================
+   SCROLL REVEAL
+   =========================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-stats {
+    flex-direction: column;
+  }
+
+  .stat {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
 
 
