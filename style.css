@@ -40,8 +40,8 @@ body {
 }
 
 /* ================= HEADER ================= */
-.nav {
-  position: sticky;
+.header {
+  position: absolute;
   width: 100%;
   top: 0;
   z-index: 1000;
@@ -474,6 +474,7 @@ strong{
     font-size: 2rem;
   }
 }
+
 
 
 
