@@ -53,9 +53,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const skills = [
     "Web Developer",
+    "Video-Editor",
     "Graphic Designer",
     "Digital Marketer",
-    "Content Creator"
+    "Content Creator."
   ];
 
   let skillIndex = 0;
@@ -96,11 +97,11 @@ window.addEventListener("load", () => {
     particles: {
       number: {
         value: 100,
-        density: { enable: true, value_area: 430 }
+        density: { enable: true, value_area: 400 }
       },
       color: { value: "#3498db" },
       shape: { type: "circle" },
-      opacity: { value: 0.3 },
+      opacity: { value: 0.4 },
       size: { value: 1.9 },
       line_linked: {
         enable: true,
@@ -109,7 +110,7 @@ window.addEventListener("load", () => {
         opacity: 0.2,
         width: 1
       },
-      move: { enable: true, speed: 2, random: true, straight: false }
+      move: { enable: true, speed: 1.5, random: true, straight: false }
     },
     interactivity: {
       events: {
@@ -122,5 +123,24 @@ window.addEventListener("load", () => {
 
 
 
+/* ===========================
+   SCROLL REVEAL ANIMATION
+   =========================== */
 
+const revealElements = document.querySelectorAll(".reveal");
 
+function revealOnScroll() {
+  const windowHeight = window.innerHeight;
+
+  revealElements.forEach(el => {
+    const elementTop = el.getBoundingClientRect().top;
+    const revealPoint = 100;
+
+    if (elementTop < windowHeight - revealPoint) {
+      el.classList.add("show");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
