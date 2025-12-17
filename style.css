@@ -369,7 +369,8 @@ strong{
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin-top: -70px;
 }
 
 .section-title span {
@@ -486,6 +487,7 @@ strong{
     font-size: 2rem;
   }
 }
+
 
 
 
