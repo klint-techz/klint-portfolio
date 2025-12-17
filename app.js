@@ -122,6 +122,23 @@ window.addEventListener("load", () => {
 });
 
 
+particlesJS("particles-about", {
+    "particles": {
+      "number": { "value": 100 },
+      "color": { "value": "#ffffff" },
+      "shape": { "type": "circle" },
+      "opacity": { "value": 0.5 },
+      "size": { "value": 2 },
+      "line_linked": { "enable": true, "distance": 120, "color": "#ffffff",
+         "opacity": 0.2, "width": 1 },
+      "move": { "enable": true, "speed": 2, random: true }
+    },
+    "interactivity": {
+      "events": { "onhover": { "enable": true, "mode": "repulse" } }
+    },
+    "retina_detect": true
+  });
+
 
 /* ===========================
    SCROLL REVEAL ANIMATION
