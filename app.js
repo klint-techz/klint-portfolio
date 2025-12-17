@@ -105,7 +105,7 @@ window.addEventListener("load", () => {
       line_linked: {
         enable: true,
         distance: 80,
-        color: "#e10600",
+        color: "#3498db",
         opacity: 0.3,
         width: 1
       },
@@ -119,6 +119,7 @@ window.addEventListener("load", () => {
     retina_detect: true
   });
 });
+
 
 
 
