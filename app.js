@@ -97,7 +97,7 @@ window.addEventListener("load", () => {
     particles: {
       number: {
         value: 100,
-        density: { enable: true, value_area: 400 }
+        density: { enable: true, value_area: 1200 }
       },
       color: { value: "#3498db" },
       shape: { type: "circle" },
@@ -107,7 +107,7 @@ window.addEventListener("load", () => {
         enable: true,
         distance: 80,
         color: "#e10600",
-        opacity: 0.2,
+        opacity: 0.3,
         width: 1
       },
       move: { enable: true, speed: 1.5, random: true, straight: false }
@@ -120,24 +120,6 @@ window.addEventListener("load", () => {
     retina_detect: true
   });
 });
-
-
-particlesJS("particles-about", {
-    "particles": {
-      "number": { "value": 100 },
-      "color": { "value": "#ffffff" },
-      "shape": { "type": "circle" },
-      "opacity": { "value": 0.5 },
-      "size": { "value": 2 },
-      "line_linked": { "enable": true, "distance": 120, "color": "#ffffff",
-         "opacity": 0.2, "width": 1 },
-      "move": { "enable": true, "speed": 2, random: true }
-    },
-    "interactivity": {
-      "events": { "onhover": { "enable": true, "mode": "repulse" } }
-    },
-    "retina_detect": true
-  });
 
 
 /* ===========================
