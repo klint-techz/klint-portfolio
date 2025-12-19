@@ -1,6 +1,6 @@
 window.addEventListener("load", () => {
   const typedText = document.getElementById("preloader");
-  const text = "Klint-techz...";
+  const text = "KLINT-TECHZ";
   const cursor = document.querySelector("typing-cursor");
   let index = 0;
 
@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
         const preloader = document.getElementById("preloader");
         preloader.style.transition = "opacity 0.5s ease";
         preloader.style.opacity = 0;
-        setTimeout(() => (preloader.style.display = "none"), 2500);
+        setTimeout(() => (preloader.style.display = "none"), 500);
       }, 500);
     }
   }
@@ -29,8 +29,11 @@ const navLinks = document.querySelector(".nav-links");
 if (menuToggle && navLinks) {
   menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
+    menuToggle.classList.toggle("active");
   });
 }
+
+
 
 /* GLASS NAVBAR ON SCROLL */
 const navbar = document.querySelector(".navbar");
