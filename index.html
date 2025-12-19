@@ -5,18 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Klint-techz | Portfolio</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" 
-  rel="stylesheet">
+  <!-- Remix Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
-  <!-- Font -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -35,32 +33,33 @@
       <p>KLINT-TECHZ</p>
     </div>
 
+    <!-- NAV LINKS -->
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+        <!-- MOBILE SOCIALS -->
+        <li class="socials">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://x.com/Klint_techz"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:klint.techz@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- HAMBURGER -->
     <div class="menu-toggle">
       <span></span>
       <span></span>
       <span></span>
     </div>
   </div>
-
-  <!-- MOBILE / DESKTOP NAV LINKS -->
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-
-      <!-- SOCIALS IN MOBILE MENU -->
-      <div class="social">
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://x.com/Klint_techz?t=aX0t7_HQwGFW-N3wVu5w8A&s=09"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="https://www.instagram.com/klint_techz?igsh=MWlwa2FocmM5Ynp5dA=="><i class="fab fa-instagram"></i></a>
-        <a href="mailto:klint.techz@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://www.facebook.com/klintTechz"><i class="fa-brands fa-facebook"></i></a>
-      </div>
-    </ul>
-  </nav>
 
   <!-- WELCOME TEXT -->
   <div class="welcome">
@@ -86,20 +85,19 @@
     </p>
 
     <div class="home-buttons">
-      <a href="#projects" class="btn primary">Projects</a>
       <a href="#contact" class="btn secondary">Hire Me</a>
+      <a href="#projects" class="btn primary">View My Projects</a>
     </div>
 
     <div class="socials">
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://x.com/Klint_techz?t=aX0t7_HQwGFW-N3wVu5w8A&s=09"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="https://www.instagram.com/klint_techz?igsh=MWlwa2FocmM5Ynp5dA=="><i class="fab fa-instagram"></i></a>
-        <a href="mailto:klint.techz@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://www.facebook.com/klintTechz"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://x.com/Klint_techz"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:klint.techz@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
     </div>
   </div>
 </section>
-
 
 <!-- ABOUT SECTION -->
 <section class="about" id="about">
@@ -107,7 +105,15 @@
   <div class="about-container">
     
     <h2 class="section-title reveal">
-      About <span>Me</span>
+      <span class="portfolio-badge">
+        <i class="ri-eye-line"></i> About me
+      </span>
+      <h2 class="portfolio-title">
+        <span>Creative</span> programmer
+      </h2>
+      <p class="portfolio-text">
+        Exploring the man behind the code.
+      </p>
     </h2>
 
     <p class="about-intro reveal">
@@ -117,15 +123,13 @@
     </p>
 
     <div class="about-content">
-
       <div class="about-text reveal">
         <p>
-          With over <strong class="experience"> 3 years of experience</strong>, I specialize in crafting responsive
-          websites, engaging brand visuals, and effective digital marketing
+          With over <strong class="experience">3 years of experience</strong>, I specialize in crafting responsive websites,
+           engaging brand visuals, and effective digital marketing
           strategies. My approach combines clean design, performance-focused
           development, and user-centered thinking.
         </p>
-
         <p>
           Whether it’s web development, graphic design, content creation, or
           digital marketing, I aim to create solutions that are not just beautiful,
@@ -138,146 +142,132 @@
           <h3>3+</h3>
           <span>Years Experience</span>
         </div>
-
+        
         <div class="stat">
           <h3>50+</h3>
           <span>Projects Completed</span>
         </div>
-
-        <div class="stat">
-          <h3>100%</h3>
-          <span>Client Satisfaction</span>
-        </div>
       </div>
-
     </div>
   </div>
 </section>
 
-
+<!-- PORTFOLIO SECTION -->
 <section class="portfolio" id="projects">
-   <div id="particles-project"></div>
+  <div id="particles-project"></div>
   <div class="overlay"></div>
- 
 
   <div class="portfolio-header reveal">
     <span class="portfolio-badge">
       <i class="ri-eye-line"></i> Featured Works
     </span>
-
     <h2 class="portfolio-title">
-    <span>Creative</span>  Portfolio
+      <span>Creative</span> Portfolio
     </h2>
-
     <p class="portfolio-text">
       Exploring the intersection of technology, design, and creativity
       through carefully crafted digital projects.
     </p>
   </div>
- <div class="project-grid">
-  <!-- WEB DEVELOPMENT -->
-  <div class="portfolio-category reveal">
-    <div class="category-header">
-      <div class="category-icon">
-        <i class="ri-code-s-slash-line"></i>
+
+  <div class="project-grid">
+    <!-- WEB DEVELOPMENT -->
+    <div class="portfolio-category reveal">
+      <div class="category-header">
+        <div class="category-icon">
+          <i class="ri-code-s-slash-line"></i>
+        </div>
+        <h3>Web Development</h3>
       </div>
-      <h3>Web Development</h3>
+      <div class="portfolio-project">
+        <img src="img/web1.jpg" alt="Iglaire Optics">
+        <div class="project-content">
+          <h4>Iglaire Optics</h4>
+          <p>
+            A premium eyewear e-commerce website built with a clean UI,
+            responsive layout, and conversion-focused design.
+          </p>
+        </div>
+      </div>
+      <div class="portfolio-project">
+        <img src="img/web2.jpg" alt="Investment Platform">
+        <div class="project-content">
+          <h4>Primevest Investment Platform</h4>
+          <p>
+            A modern investment platform UI featuring real estate,
+            cryptocurrency, and precious metals sections.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div class="portfolio-project">
-      <img src="Screenshot_20251127_172313_Chrome.png" alt="Iglaire Optics">
-      <div class="project-content">
-        <h4>Iglaire Optics</h4>
-        <p>
-          A premium eyewear e-commerce website built with a clean UI,
-          responsive layout, and conversion-focused design.
-        </p>
+    <!-- GRAPHICS DESIGN -->
+    <div class="portfolio-category reveal">
+      <div class="category-header">
+        <div class="category-icon">
+          <i class="ri-palette-line"></i>
+        </div>
+        <h3>Graphics Design</h3>
+      </div>
+      <div class="portfolio-project">
+        <img src="img/design1.jpg" alt="Brand Flyer">
+        <div class="project-content">
+          <h4>Brand Promotion Flyers</h4>
+          <p>
+            High-impact promotional flyers designed with bold typography,
+            balanced layouts, and brand-focused color systems.
+          </p>
+        </div>
+      </div>
+      <div class="portfolio-project">
+        <img src="img/design2.jpg" alt="Logo Design">
+        <div class="project-content">
+          <h4>Logo & Visual Identity</h4>
+          <p>
+            Minimal and scalable logo designs crafted for startups and
+            personal brands across digital platforms.
+          </p>
+        </div>
       </div>
     </div>
 
-    <div class="portfolio-project">
-      <img src="img/web2.jpg" alt="Investment Platform">
-      <div class="project-content">
-        <h4>Primevest Investment Platform</h4>
-        <p>
-          A modern investment platform UI featuring real estate,
-          cryptocurrency, and precious metals sections.
-        </p>
+    <!-- VIDEO EDITING -->
+    <div class="portfolio-category reveal">
+      <div class="category-header">
+        <div class="category-icon">
+          <i class="ri-video-line"></i>
+        </div>
+        <h3>Video Editing</h3>
+      </div>
+      <div class="portfolio-project">
+        <img src="img/video1.jpg" alt="Social Media Edit">
+        <div class="project-content">
+          <h4>Social Media Promo Videos</h4>
+          <p>
+            Short-form promotional videos optimized for Instagram,
+            TikTok, and Facebook engagement.
+            </p>
+        </div>
+      </div>
+      <div class="portfolio-project">
+        <img src="img/video2.jpg" alt="Brand Video">
+        <div class="project-content">
+          <h4>Brand Storytelling Videos</h4>
+          <p>
+            Clean and engaging brand videos edited with smooth transitions,
+            sound design, and visual consistency.
+          </p>
+        </div>
       </div>
     </div>
   </div>
-
-  <!-- GRAPHICS DESIGN -->
-  <div class="portfolio-category reveal">
-    <div class="category-header">
-      <div class="category-icon">
-        <i class="ri-palette-line"></i>
-      </div>
-      <h3>Graphics Design</h3>
-    </div>
-
-    <div class="portfolio-project">
-      <img src="d8f805a8f7a821ef04440b171228b7c2.jpg" alt="Brand Flyer">
-      <div class="project-content">
-        <h4>Brand Promotion Flyers</h4>
-        <p>
-          High-impact promotional flyers designed with bold typography,
-          balanced layouts, and brand-focused color systems.
-        </p>
-      </div>
-    </div>
-
-    <div class="portfolio-project">
-      <img src="img/design2.jpg" alt="Logo Design">
-      <div class="project-content">
-        <h4>Logo & Visual Identity</h4>
-        <p>
-          Minimal and scalable logo designs crafted for startups and
-          personal brands across digital platforms.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- VIDEO EDITING -->
-  <div class="portfolio-category reveal">
-    <div class="category-header">
-      <div class="category-icon">
-        <i class="ri-video-line"></i>
-      </div>
-      <h3>Video Editing</h3>
-    </div>
-
-    <div class="portfolio-project">
-      <img src="img/video1.jpg" alt="Social Media Edit">
-      <div class="project-content">
-        <h4>Social Media Promo Videos</h4>
-        <p>
-          Short-form promotional videos optimized for Instagram,
-          TikTok, and Facebook engagement.
-        </p>
-      </div>
-    </div>
-
-    <div class="portfolio-project">
-      <img src="img/video2.jpg" alt="Brand Video">
-      <div class="project-content">
-        <h4>Brand Storytelling Videos</h4>
-        <p>
-          Clean and engaging brand videos edited with smooth transitions,
-          sound design, and visual consistency.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
 </section>
 
-<!-- PARTICLES -->
+<!-- PARTICLES JS -->
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 <script src="app.js"></script>
 
+
+
 </body>
 </html>
-
-
