@@ -146,3 +146,17 @@ function revealOnScroll() {
 
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
+
+
+
+const skillsSection = document.querySelector('.skills-container');
+const skillCards = document.querySelectorAll('.skill-fill');
+
+window.addEventListener('scroll', () => {
+  const sectionPos = skillsSection.getBoundingClientRect().top;
+  const screenPos = window.innerHeight / 1.2;
+
+  if(sectionPos < screenPos){
+    skillsSection.classList.add('show-bars');
+  }
+});
