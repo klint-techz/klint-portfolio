@@ -154,7 +154,7 @@ body {
 /* ================= HOME ================= */
 .home {
   height: 100vh;
-  background: url("img/workspace.jpg") center/cover no-repeat;
+  background: url("workspace.jpg") center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -985,3 +985,4 @@ min-width: 100px;
     flex-direction: row;
   }
 }
+
