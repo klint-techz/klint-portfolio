@@ -347,7 +347,7 @@ body {
   .socials {
   padding-left: 0px;
   pointer-events: auto;
-  padding-top: 10px;
+  padding-top: 40px;
 }
 
   .nav-links li {
@@ -1099,6 +1099,7 @@ a{
   transform: scale(1.2);
   background-color: #1ebe5d;
 }
+
 
 
 
