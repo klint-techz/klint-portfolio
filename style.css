@@ -616,7 +616,7 @@ strong{
 
   .stat {
     text-align: center;
-    width: 145px;
+    width: 150px;
     line-height: 1.2;
   }
   .about-stats2{
@@ -1099,6 +1099,7 @@ a{
   transform: scale(1.2);
   background-color: #1ebe5d;
 }
+
 
 
 
