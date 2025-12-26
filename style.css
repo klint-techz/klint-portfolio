@@ -597,6 +597,9 @@ strong{
     gap: 10px;
     height: 150px;
   }
+  .about-intro {
+  max-width: 300px;
+}
   .about-content {
     display: flex;
     flex-direction: column;
@@ -1099,6 +1102,7 @@ a{
   transform: scale(1.2);
   background-color: #1ebe5d;
 }
+
 
 
 
