@@ -187,7 +187,7 @@ body {
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.67);
+  background: rgba(0,0,0,0.53);
   z-index: 2;
 }
 .overlay2 {
@@ -1098,4 +1098,5 @@ a{
   transform: scale(1.2);
   background-color: #1ebe5d;
 }
+
 
