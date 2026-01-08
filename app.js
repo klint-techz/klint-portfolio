@@ -8,7 +8,7 @@ window.addEventListener("load", () => {
     if (index < text.length) {
       typedText.textContent += text.charAt(index);
       index++;
-      setTimeout(typeLetter, 200); // typing speed
+      setTimeout(typeLetter, 90); // typing speed
     } else {
       // After typing finishes, wait 0.5s then fade out preloader
       setTimeout(() => {
@@ -160,3 +160,4 @@ window.addEventListener('scroll', () => {
     skillsSection.classList.add('show-bars');
   }
 });
+
