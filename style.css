@@ -187,7 +187,7 @@ body {
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.53);
+  background: rgba(0,0,0,0.6);
   z-index: 2;
 }
 .overlay2 {
@@ -294,7 +294,7 @@ body {
 }
 
 .socials a {
-  font-size: 1.9rem;
+  font-size: 1.2rem;
   color: #fff;
   transition: 0.4s;
   padding-left: 10px;
@@ -347,7 +347,7 @@ body {
   .socials {
   padding-left: 0px;
   pointer-events: auto;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
   .nav-links li {
@@ -415,6 +415,11 @@ display: none;
    height: 360px;
   width: 282px;
   border-radius: 25%;
+  justify-content: center;
+  align-items: center;
+}
+.socials a{
+  font-size: 1.2rem;
 }
 }
 
@@ -597,9 +602,6 @@ strong{
     gap: 10px;
     height: 150px;
   }
-  .about-intro {
-  max-width: 300px;
-}
   .about-content {
     display: flex;
     flex-direction: column;
@@ -619,8 +621,8 @@ strong{
 
   .stat {
     text-align: center;
-    width: 170px;
     line-height: 1.2;
+    width: 150px;
   }
   .about-stats2{
   display: flex;
@@ -632,7 +634,10 @@ strong{
 .parent{
   margin-top: 20px;
   width: 95%;
-   margin-left: 0px;
+  margin-left: -5px;
+}
+.about-intro {
+  max-width: 300px;
 }
 
   .section-title {
@@ -1102,15 +1107,3 @@ a{
   transform: scale(1.2);
   background-color: #1ebe5d;
 }
-
-
-
-
-
-
-
-
-
-
-
-
