@@ -413,7 +413,7 @@ display: none;
   
 }
 .mypic2{
-  height: 400px;
+  height: 450px;
   width: 95%;
   border-radius: 25%;
   margin-left: 13px;
@@ -1108,6 +1108,7 @@ a{
   transform: scale(1.2);
   background-color: #1ebe5d;
 }
+
 
 
 
